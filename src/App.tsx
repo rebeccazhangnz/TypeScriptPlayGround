@@ -1,12 +1,12 @@
 import React from 'react';
-import ReactTypeScript from './components/ReactTypeScript'
+import ReactTypeScript from './components/ReactTypeScript';
 
 function App() {
-  return (
-    <div className="App">
-      <ReactTypeScript/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <ReactTypeScript />
+        </div>
+    );
 }
 
 export default App;

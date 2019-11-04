@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 
 export default class tsClassComponent extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             counter: 1,
         };
     }
 
-
     render() {
-        const {counter} = this.state;
+        const { counter } = this.state;
         return (
-            <div>    
+            <div>
                 this is the class component.
                 <div>
                     Current Count:
