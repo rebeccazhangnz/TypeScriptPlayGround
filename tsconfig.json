@@ -1,19 +1,24 @@
 {
     "compilerOptions": {
-        "target": "es5",
-        "lib": ["dom", "dom.iterable", "esnext"],
-        "allowJs": true,
-        "skipLibCheck": true,
-        "esModuleInterop": true,
-        "allowSyntheticDefaultImports": true,
-        "strict": true,
-        "forceConsistentCasingInFileNames": true,
-        "module": "esnext",
-        "moduleResolution": "node",
-        "resolveJsonModule": true,
-        "isolatedModules": true,
+        "target": "es6", // complied the ts files to es6 js when emit
+        "lib": ["dom", "dom.iterable", "esnext", "es2015", "es2016"],
+        "allowJs": true, // Allow JavaScript files to be compiled.
+        "skipLibCheck": true, //Skip type checking of all declaration files (*.d.ts).
+        "esModuleInterop": true, //Emit __importStar and __importDefault helpers for runtime babel ecosystem compatibility and enable --allowSyntheticDefaultImports for typesystem compatibility.
+        "allowSyntheticDefaultImports": true, //Allow default imports from modules with no default export. This does not affect code emit, just typechecking.
+        "strict": true, //Enable all strict type checking options. Enabling --strict enables --noImplicitAny, --noImplicitThis, --alwaysStrict, --strictBindCallApply, --strictNullChecks, --strictFunctionTypes and --strictPropertyInitialization.
+        "strictPropertyInitialization": false, //	Ensure non-undefined class properties are initialized in the constructor. This option requires --strictNullChecks be enabled in order to take effect.
+        "forceConsistentCasingInFileNames": true, //allow inconsistently-cased references to the same file.
+        "module": "esnext", //Specify module code generation: "None", "CommonJS", "AMD", "System", "UMD", "ES6", "ES2015" or "ESNext".
+        "moduleResolution": "node", //Determine how modules get resolved. Either "Node" for Node.js/io.js style resolution, or "Classic"
+        "resolveJsonModule": true, //Include modules imported with .json extension.
+        "isolatedModules": false, //Perform additional checks to ensure that separate compilation (such as with transpileModule or @babel/plugin-transform-typescript) would be safe.
+        "strictNullChecks": true, // use nullable type definination check null type
+        "sourceMap": true, // the source map option allow us to see the app.ts file in the browser dev tool and set break points to debug. It is handy when developing, because we can debug the ts codes straight away in the browser. When deploy, we might not need the ts file, then we can change to false.
+        "noImplicitAny": true, //when a variable is originally not assinged type/value when it defines. (eg. let someVariable) , it will be automatically assigned a type of 'any'. Turn noImplicityAny to ture which will throws an error and faile to compile, if there is any undefined variables that doesn't have types.
+        "noUnusedParameters": true, //any unused parameters will throw an error to the console and fails the compile
         "noEmit": true,
         "jsx": "react"
     },
-    "include": ["src"]
+    "include": ["src", "src/notes", "*.ts"]
 }
