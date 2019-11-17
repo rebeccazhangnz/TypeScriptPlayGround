@@ -19,7 +19,19 @@
     <!-- <script src='../src/notes/Classes/class.js'></script> -->
     <!-- <script src='../src/notes/Classes/Exercise-Solution.js'></script> -->
     <!-- <script src='../src/notes/NameSpaces/bundle.js'></script> -->
-    <script src='../src/notes/Modules/bundle.js'></script> 
+    <script src='../node_modules/systemjs/dist/system.js'></script>
+    <script>
+      //set our baseURL reference path
+      SystemJs.config({
+        baseURL:'/',
+        defaultJSExtensions:true,
+      });
+
+      //loads the local js file
+      SystemJs.import('../src/notes/Modules/Modules.js')
+
+    </script>
+
 
     <div id="root"></div>
     <!--
