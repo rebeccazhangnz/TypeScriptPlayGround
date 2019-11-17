@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "target": "es6", // complied the ts files to es6 js when emit
+        "target": "es5", // complied the ts files to es6 js when emit
         "lib": ["dom", "dom.iterable", "esnext", "es2015", "es2016"],
         "allowJs": true, // Allow JavaScript files to be compiled.
         "skipLibCheck": true, //Skip type checking of all declaration files (*.d.ts).
