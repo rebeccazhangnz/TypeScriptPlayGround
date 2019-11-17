@@ -1,0 +1,4 @@
+1. error TS1056: Accessors are only available when targeting ECMAScript 5 and higher.
+
+Ans: When people compile a single file by tsc file name, the tsconfig.json doesn't apply, which the file will be compile with default es3 standard. tsconfig file only apply when the project which is being configured is compiled. To solve the error, compile the file with specific target. eg. tsc filename -t es5
+
