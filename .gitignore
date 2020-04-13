@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 src/notes/Interfaces/node_modules
+src/notes/Generics/node_modules
 src/notes/Modules/node_modules
 /.pnp
 .pnp.js
